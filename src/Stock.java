@@ -1,21 +1,21 @@
 
 public class Stock extends Valuables {
-	private int Amount = 0;
-	private double Price = 0;
+	private int amount = 0;
+	private double price = 0;
 	
-	public Stock(String name, double Price, int Amount){
+	public Stock(String name, double price, int amount){
 		super(name);
-		Amount = this.Amount;
-		Price = this.Price;
+		this.amount = amount;
+		this.price = price;
 		
 	}
 	
 	public double calcValue () {
-		return Amount * Price;
+		return amount * price;
 	}
 
 	public String toString() {
-		return "Stock: " + getName() + " " + "Value: " + getValue() + " " + "Share amount: " + " " + "Stock price: " + Price ;
+		return "Stock: " + getName() + " " + "Stock value: " + getValue() + " " + "Share amount: " + amount + " " + "Stock price: " + price ;
 	}
 	
 }

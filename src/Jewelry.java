@@ -17,7 +17,7 @@ public class Jewelry extends Valuables {
 
 	@Override 
 	public String toString() {
-		return "Smycke: " + getName() + " värde: " + getValue() + " stenar: " + gems + " " + ((material)? "Guld" : "Silver");
+		return "Jewelry: " + getName() + " value: " + getValue() + " gems: " + gems + " " + ((material)? "Gold" : "Silver");
 	}
 
 	

@@ -10,10 +10,12 @@ public class Stock extends Valuables {
 		
 	}
 	
+	@Override
 	public double calcValue () {
 		return amount * price;
 	}
 
+	@Override
 	public String toString() {
 		return "Stock: " + getName() + " " + "Stock value: " + getValue() + " " + "Share amount: " + amount + " " + "Stock price: " + price ;
 	}

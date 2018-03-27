@@ -1,8 +1,11 @@
 
 public abstract class Valuables {
 	
-	protected String name;
-	protected double value;
+	private String name;
+	
+	public Valuables(String n) {
+		name = n;
+	}
 	
 	public abstract double calcValue();
 	

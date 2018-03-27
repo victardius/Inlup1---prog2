@@ -5,11 +5,11 @@ public class Jewelry extends Valuables {
 	private static final int SILVER = 700, GULD = 2000;
 	
 	public double calcValue () {
-		return 0;
+		return value + (gems * 500);
 	}
 
 	public String toString() {
-		return "shit";
+		return "Smycke: " + name + " värde: " + getValue();
 	}
 	
 }

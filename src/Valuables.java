@@ -1,8 +1,8 @@
 
 public abstract class Valuables {
 	
-	private String name;
-	private double value;
+	protected String name;
+	protected double value;
 	
 	public abstract double calcValue();
 	

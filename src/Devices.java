@@ -1,12 +1,22 @@
 
 public class Devices extends Valuables {
 	
+	private int condition = 0;
+	private int buyoutPrice = 0;
+	
+	public Devices (String name, int condition, int buyoutPrice){
+		super(name);
+		this.condition = condition;
+		this.buyoutPrice = buyoutPrice;
+	}
+	
+	@Override
 	public double calcValue () {
-		return 0;
+		return ((condition/10) * buyoutPrice);
 	}
 
 	public String toString() {
-		return "shit";
+		return "Device: " + getName() + "condition: + condition + " + "value: " + getValue();
 	}
 	
 }

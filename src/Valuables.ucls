@@ -10,7 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="Devices" project="Inlup1" file="/Inlup1/src/Devices.java" binary="false" 
+  <class id="2" language="java" name="Device" project="Inlup1" file="/Inlup1/src/Device.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="99" width="148" x="588" y="403"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

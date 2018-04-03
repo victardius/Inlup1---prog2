@@ -1,10 +1,10 @@
 
-public class Devices extends Valuables {
+public class Device extends Valuables {
 	
 	private int condition = 0;
 	private int buyoutPrice = 0;
 	
-	public Devices (String name, int condition, int buyoutPrice){
+	public Device (String name, int condition, int buyoutPrice){
 		super(name);
 		this.condition = condition;
 		this.buyoutPrice = buyoutPrice;

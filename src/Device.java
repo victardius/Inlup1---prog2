@@ -12,12 +12,12 @@ public class Device extends Valuables {
 	
 	@Override
 	public double calcValue () {
-		return ((condition/10) * buyoutPrice);
+		return ((condition/10.0) * buyoutPrice);
 	}
 	
 	@Override
 	public String toString() {
-		return "Device: " + getName() + " condition: + condition + " + "value: " + getValue();
+		return "Device: " + getName() + " Value: " + getValue() + " Price: " + buyoutPrice + " Condition: " + condition;
 	}
 	
 }

@@ -10,16 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="Shares" project="Inlup1" file="/Inlup1/src/Shares.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="99" width="148" x="400" y="403"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="Devices" project="Inlup1" file="/Inlup1/src/Devices.java" binary="false" 
+  <class id="2" language="java" name="Devices" project="Inlup1" file="/Inlup1/src/Devices.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="99" width="148" x="588" y="403"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -28,9 +19,18 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="Jewelry" project="Inlup1" file="/Inlup1/src/Jewelry.java" binary="false" 
+  <class id="3" language="java" name="Jewelry" project="Inlup1" file="/Inlup1/src/Jewelry.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="99" width="148" x="776" y="403"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="Stock" project="Inlup1" file="/Inlup1/src/Stock.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="466" y="446"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -42,11 +42,11 @@
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="6">    
-    <end type="SOURCE" refId="3"/>    
+    <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="7">    
-    <end type="SOURCE" refId="4"/>    
+    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

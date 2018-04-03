@@ -17,7 +17,7 @@ public class Devices extends Valuables {
 	
 	@Override
 	public String toString() {
-		return "Device: " + getName() + "condition: + condition + " + "value: " + getValue();
+		return "Device: " + getName() + " condition: + condition + " + "value: " + getValue();
 	}
 	
 }

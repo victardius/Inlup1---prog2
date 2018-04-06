@@ -20,4 +20,8 @@ public class Device extends Valuables {
 		return "Device: " + getName() + " Value: " + getValue() + " Price: " + buyoutPrice + " Condition: " + condition;
 	}
 	
+	@Override
+	public void setValue () {
+	}
+	
 }

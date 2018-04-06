@@ -20,5 +20,8 @@ public class Jewelry extends Valuables {
 		return "Jewelry: " + getName() + " value: " + getValue() + " gems: " + gems + " " + ((material)? "Gold" : "Silver");
 	}
 
+	@Override
+	public void setValue () {
+	}
 	
 }

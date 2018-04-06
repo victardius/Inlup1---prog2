@@ -20,4 +20,9 @@ public class Stock extends Valuables {
 		return "Stock: " + getName() + " " + "Stock value: " + getValue() + " " + "Share amount: " + amount + " " + "Stock price: " + price ;
 	}
 	
+	@Override
+	public void setValue () {
+		price = 0;
+	}
+	
 }

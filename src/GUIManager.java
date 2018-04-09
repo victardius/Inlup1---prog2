@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class GUIManager extends JFrame {
 
@@ -23,8 +24,10 @@ public class GUIManager extends JFrame {
 		add(scroll, BorderLayout.CENTER);
 
 		JPanel sidebarRight = new JPanel();
+		JPanel sidebarRightBot = new JPanel();
 		sidebarRight.setLayout(new BoxLayout(sidebarRight, BoxLayout.Y_AXIS));
 		add(sidebarRight, BorderLayout.EAST);
+		sidebarRight.add(sidebarRightBot);
 		sidebarRight.add(new JLabel("Sorting by:"));
 		nameRadioButton = new JRadioButton("Name", true);
 		sidebarRight.add(nameRadioButton);
@@ -45,9 +48,9 @@ public class GUIManager extends JFrame {
 		JButton displayOptions = new JButton("List");
 		lowerBar.add(displayOptions);
 		displayOptions.addActionListener(new DisplayListener());
-		 JButton marketCrash = new JButton("Market crash");
-		 lowerBar.add(marketCrash);
-		 marketCrash.addActionListener(new CrashListener());
+		JButton marketCrash = new JButton("Market crash");
+		lowerBar.add(marketCrash);
+		marketCrash.addActionListener(new CrashListener());
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(400, 600);
@@ -116,20 +119,29 @@ public class GUIManager extends JFrame {
 		}
 
 	}
-	
+
 	class DisplayListener implements ActionListener {
 		public void actionPerformed(ActionEvent ave) {
 			display.setText("");
-			for (Valuables v: valuables) {
+			sortList();
+			for (Valuables v : valuables) {
+
 				display.append(v.toString() + "\n");
 			}
 		}
+
+		public void sortList() {
+			if (nameRadioButton.isSelected()) {
+				Collections.sort(valuables, new NameComparator());
+			} else {
+				Collections.sort(valuables, new ValueComparator());
+			}
+		}
 	}
-	
+
 	class CrashListener implements ActionListener {
 		public void actionPerformed(ActionEvent ave) {
-			display.setText("");
-			for (Valuables v: valuables) {
+			for (Valuables v : valuables) {
 				v.setValue();
 			}
 		}

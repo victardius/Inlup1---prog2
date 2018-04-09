@@ -14,7 +14,7 @@ public class GUIManager extends JFrame {
 	JRadioButton nameRadioButton, valueRadioButton;
 	private String[] valuableOptions = { "Device", "Jewelry", "Stock" };
 	JComboBox<String> newValuablesDropdown = new JComboBox<String>(valuableOptions);
-	private ArrayList<Valuables> valuables = new ArrayList<>();
+	protected ArrayList<Valuables> valuables = new ArrayList<>();
 
 	GUIManager() {
 		display = new JTextArea();

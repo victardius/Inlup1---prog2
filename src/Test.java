@@ -1,13 +1,19 @@
+public class Test{
+	
+	GUIManager gui = new GUIManager();
+	
+	private void testMethod() {
+		
 
-public class Test {
-
+		gui.valuables.add(new Jewelry("Ring", 3, true));
+		gui.valuables.add(new Stock("Not Ring", 3, 3));
+		gui.valuables.add(new Device("famiCom", 3, 3000));
+		
+	}
+	
 	public static void main(String[] args) {
-		
-		System.out.println(new Jewelry("Ring", 3, true));
-		System.out.println(new Stock("Not Ring", 3, 3));
-		System.out.println(new Device("famiCom", 3, 3000));
-		
-		new GUIManager();
+	
+		new Test().testMethod();
 		
 	}
 	

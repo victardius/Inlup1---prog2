@@ -19,9 +19,5 @@ public class Jewelry extends Valuables {
 	public String toString() {
 		return "Jewelry: " + getName() + " value: " + getValue() + " gems: " + gems + " " + ((material)? "Gold" : "Silver");
 	}
-
-	@Override
-	public void setValue () {
-	}
 	
 }

@@ -1,6 +1,7 @@
+import java.text.DecimalFormat;
 
 public class Jewelry extends Valuables {
-	
+	DecimalFormat formatDec = new DecimalFormat("#0.00");
 	private int gems = 0;
 	private boolean material;
 
@@ -17,7 +18,7 @@ public class Jewelry extends Valuables {
 
 	@Override 
 	public String toString() {
-		return "Jewelry: " + getName() + " value: " + getValue() + " gems: " + gems + " " + ((material)? "Gold" : "Silver");
+		return "Jewelry: " + getName() + " value: " + formatDec.format(getValue()) + " gems: " + gems + " " + ((material)? "Gold" : "Silver");
 	}
 	
 }

@@ -15,8 +15,8 @@ public abstract class Valuables {
 		return name;
 	}
 	
-	public String getValue() {
-		return formatDec.format(calcValue() * 1.25);
+	public double getValue() {
+		return calcValue() * 1.25;
 	}
 	
 	public void setValue() {

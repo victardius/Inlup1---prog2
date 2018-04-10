@@ -8,6 +8,9 @@ public class Test{
 		gui.valuables.add(new Jewelry("Ring", 3, true));
 		gui.valuables.add(new Stock("Not Ring", 3, 3));
 		gui.valuables.add(new Device("famiCom", 3, 3000));
+		gui.valuables.add(new Device("blerg", 3, 2999));
+		gui.valuables.add(new Device("blerg", 3, 3001));
+
 	
 		
 	}

@@ -83,6 +83,20 @@ public class GUIManager extends JFrame {
 			String name = f.getName();
 			int condition = f.getCondition();
 			int price = f.getPrice();
+			if (price < 0 && (condition < 0 || condition > 10)) {
+				JOptionPane.showMessageDialog(GUIManager.this, "Invalid price and condition!");
+				return;
+			}
+			else if (price < 0) {
+				JOptionPane.showMessageDialog(GUIManager.this, "Invalid price!");
+				return;
+			}
+			else if(condition < 0 || condition > 10) {
+				JOptionPane.showMessageDialog(GUIManager.this, "Invalid condition!");
+				return;
+			}
+			
+				
 			Device device = new Device(name, condition, price);
 			valuables.add(device);
 
@@ -98,6 +112,12 @@ public class GUIManager extends JFrame {
 			String name = f.getName();
 			int price = f.getPrice();
 			boolean gold = f.getMaterial();
+			
+			if (price < 0) {
+				JOptionPane.showMessageDialog(GUIManager.this, "Invalid amount of gems!");
+				return;
+			}
+			
 			Jewelry jewelry = new Jewelry(name, price, gold);
 			valuables.add(jewelry);
 
@@ -112,6 +132,18 @@ public class GUIManager extends JFrame {
 			String name = f.getName();
 			double price = f.getPrice();
 			int amount = f.getAmount();
+			if (price < 0 && amount < 0) {
+				JOptionPane.showMessageDialog(GUIManager.this, "Invalid price and amount!");
+				return;
+			}
+			else if (price < 0) {
+				JOptionPane.showMessageDialog(GUIManager.this, "Invalid price!");
+				return;
+			}
+			else if(amount < 1) {
+				JOptionPane.showMessageDialog(GUIManager.this, "Invalid amount!");
+				return;
+			}
 
 			Stock stock = new Stock(name, price, amount);
 			valuables.add(stock);
